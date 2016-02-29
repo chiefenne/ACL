@@ -1,7 +1,7 @@
 #!/bin/env python
 
 """LED control for the pyboard (via GPIO pins) using micropython.
-Main aim is to implement aircraft anti collision and navigation light control.
+Main aim is to implement aircraft anti collision lights and navigation lights.
 """
 
 import sys
@@ -61,7 +61,7 @@ class LED:
 if __name__ == '__main__':
 
     if len(sys.argv) != 2:
-        print ('\n   Usage: python acl.py [1, 2, 3]')
+        print ('\n   Usage: python acl.py [1, 2]')
         print ('        1 ... strobo and blink test')
         print ('        2 ... aircraft navigation and anti collision lights\n')
         sys.exit()
